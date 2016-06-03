@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "index";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+   
+
+</head>
+<body>
+   
+            <!--======= SIGN UP =========-->
+             <section class="sign-up">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-sm-6">
+                           
+                  
+                <img class="img-responsive" src="~/Content/images/sign-up-img.png" alt="">
+            </div>
+            <!--======= SIGN UP FORM =========-->
+            <!--   < div class="col-sm-6">-->
+            <center>
+                <form name=" btn" action="~/Adminhome/adminlogin" method="post">
+
+                    <ul class="row">
+                        <li class="col-md-6">
+                            <div class="form-group">
+                                <label for="">
+                                    USER_ID *
+                                    <!--   <input type="text" class="form-control" id="" placeholder="">-->
+                                    <input type="text" class="form-control" name="user_name" />
+                                    <br /><br/>
+
+
+                                </label>
+                            </div>
+
+
+                        </li>
+                      
+
+
+                        <li class="col-md-6">
+                            <div class="form-group">
+                                <label for="">
+                                    Password *
+                                    <input type="password" class="form-control" name="Password" />
+                                    <br />
+
+                                </label>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6">
+                            <button type="submit" class="btn">Login</button>
+                        </li>
+                    </ul>
+                </form>
+            </center>
+        </div>
+
+
+                     </div>
+</section>
+
+    </body>
+</html>

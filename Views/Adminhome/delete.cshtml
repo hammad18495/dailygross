@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>delete</title>
+    @Html.Partial("PartialLib")
+
+
+</head>
+<body style="font-family:Verdana ;color:white;overflow-x:hidden ;background-image:url('/images/nbg17.jpg');background-repeat:no-repeat;background-size:cover;">
+    @Html.Partial("AdminPartialHeader")
+
+
+    
+        <section class="sub-banner">
+            <div class="overlay">
+                <div class="container">
+                    
+                 <!--   <ul class="sub-nav">
+                        <li><a href="#."><i class="fa fa-home"></i></a> / </li>
+                        <li><a href="#.">Sign Up</a></li>
+                    </ul>-->
+                </div>
+            </div>
+        </section>
+
+        <!--======= SIGN UP =========-->
+        <section class="sign-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        
+                        <img class="img-responsive" src="~/Content/images/sign-up-img.png" alt="">
+                    </div>
+
+                    <!--======= SIGN UP FORM =========-->
+                    <div class="col-sm-6">
+                        <form action="/Adminhome/deladmin" method="post">
+                            <ul class=" row">
+                                <li class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">
+                                            ITEM ID *
+                                            <input type="text" name="id" class="form-control" id="" placeholder="">
+                                        </label>
+                                    </div>
+                                </li>
+
+
+
+                                <li class="col-md-6">
+                                    <button type="submit" class="btn">Delete</button>
+                                </li>
+
+                                <!-- <li class="col-md-6">-->
+                                <!-- <button type="submit" class="btn">Back</button>-->
+                                <a class="col-md-6" href=" ../../Adminhome/Aadmin">
+                                    BACK
+
+                                </a>
+
+                            </ul>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </body>
+</html>

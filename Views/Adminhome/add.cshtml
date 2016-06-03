@@ -1,0 +1,118 @@
+﻿@{
+    Layout = "~/Views/Shared/header.cshtml";
+}
+@{
+    ViewBag.Title = "add";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>add</title>
+    @*@Html.Partial("PartialLib")*@
+    
+</head>
+<body style="font-family: Verdana; color: white; overflow-x: hidden; background-image: url('/Content/images/im2.jpg'); background-repeat: no-repeat; background-size: cover;">
+    @*@Html.Partial("AdminPartialHeader")*@
+
+    
+        <section class="sub-banner">
+            <div class="overlay">
+                <div class="container">
+
+                    <ul class="sub-nav">
+                        <!--   <li><a href="#."><i class="fa fa-home"></i></a> / </li>
+                           <li><a href="#.">Sign Up</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--======= SIGN UP =========-->
+        <section class="sign-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+
+                        <img class="img-responsive" src="~/Content/images/sign-up-img.png" alt="">
+                    </div>
+
+                    <!--======= SIGN UP FORM =========-->
+                    <div class="col-sm-6">
+                        <!--  <form action="/Adminhome/addadmin" method="post">-->
+                      
+                        @using (Html.BeginForm("addadmin", "Adminhome", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            <ul class="row">
+                                <li class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">
+                                            ITEM Name *
+                                            <input type="text" name="name" class="form-control">
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">
+                                            ITEM PRICE *
+                                            <input type="text" name="price" class="form-control" id="" placeholder="">
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">
+                                            ITEM QUANTITY*
+                                            <input type="text" name="quant" class="form-control" id="" placeholder="">
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">
+                                            ITEM Order_id
+                                            <input type="text" name="odd" class="form-control" id="" placeholder="">
+                                        </label>
+                                    </div>
+                                </li>
+
+                                <li class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">
+                                            ITEM Category
+                                            <input type="text" name="cat" class="form-control" id="" placeholder="">
+                                        </label>
+                                    </div>
+                                </li>
+
+
+                                <li class="col-md-6">
+                                    <div class="form-group">
+                                        <strong>Upload Image:</strong> <br /> <br />
+                                        <input type="file" name="file" /><br /> <br> <br />
+
+
+                                        <br />
+                                    </div>
+
+                                    <a class="col-md-6" href=" ../../Adminhome/Aadmin">
+                                        BACK
+
+                                    </a>
+                            </ul>
+
+                            <button type="submit" class="btn" value="submit"> Done </button> <br />
+                           
+                <!--    </form>-->
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

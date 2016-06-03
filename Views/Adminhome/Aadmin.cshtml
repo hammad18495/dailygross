@@ -1,0 +1,117 @@
+﻿@{
+    Layout =  "~/Views/Shared/header.cshtml";
+}
+@{
+    ViewBag.Title = "Aadmin";
+}
+
+<!DOCTYPE html>
+
+<html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumino - Panels</title>
+
+    <link href="~/CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="~/CSS/datepicker3.css" rel="stylesheet">
+    <link href="~/CSS/styles.css" rel="stylesheet">
+
+    <!--Icons-->
+    <script src="JJS/lumino.glyphs.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+
+
+<body style="font-family: Verdana; color: white; overflow-x: hidden; background-image: url('/Content/images/im2.jpg'); background-repeat: no-repeat; background-size: cover;">
+   
+
+
+    <section class="sub-banner">
+        <div class="overlay">
+            <div class="container">
+                <div>
+                    <div>
+                
+                <!--<ul class="sub-nav">
+                    <li><a href="#."><i class="fa fa-home"></i></a> / </li>
+                    <li><a href="#.">Login</a></li>
+                </ul>-->
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    @*<center>
+
+        <h1>admin's Functionality</h1><br />
+        <h2>Admin can perform different fuctions given below </h2><br />
+        <form method="post" action="~/Adminhome/add">
+            <input type="submit" value="Add Item" />
+        </form>
+
+        <br /><br /><br />
+        <form method="post" action="~/Adminhome/view">
+            <input type="submit" value="View Item" />
+        </form>
+        <br /><br /><br />
+
+        <form method="post" action="~/Adminhome/delete">
+            <input type="submit" value="Delete Item" />
+        </form>
+        <br /><br /><br />
+
+        <form method="post" action="~/Adminhome/update">
+            <input type="submit" value="Update Item" />
+        </form>
+        <br /><br /><br />
+
+        <form method="post" action="~/Adminhome/viewdb">
+            <input type="submit" value="View db" />
+        </form>
+        <br /><br /><br />
+
+
+
+
+    </center>*@
+</body>
+</html>
+<script src="JJS/jquery-1.11.1.min.js"></script>
+<script src="JJS/bootstrap.min.js"></script>
+<script src="JJS/chart.min.js"></script>
+<script src="JJS/chart-data.js"></script>
+<script src="JJS/easypiechart.js"></script>
+<script src="JJS/easypiechart-data.js"></script>
+<script src="JJS/bootstrap-datepicker.js"></script>
+<script>
+    !function ($) {
+        $(document).on("click", "ul.nav li.parent > a > span.icon", function () {
+            $(this).find('em:first').toggleClass("glyphicon-minus");
+        });
+        $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+    }(window.jQuery);
+
+    $(window).on('resize', function () {
+        if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+    })
+    $(window).on('resize', function () {
+        if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+    })
+</script>
+
+
+
+

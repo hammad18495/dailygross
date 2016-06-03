@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "signup";
+}
+
+
+<section class="sub-banner">
+    <div class="overlay">
+        <div class="container">
+            <h2>Sign Up</h2>
+            <ul class="sub-nav">
+                <li><a href="#."><i class="fa fa-home"></i></a> / </li>
+                <li><a href="#.">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--======= SIGN UP =========-->
+<section class="sign-up">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>
+                    Get more free coupons and deals<br>
+                    from comre!
+                </h4>
+                <img class="img-responsive" src="~/Content/images/sign-up-img.png" alt="">
+            </div>
+
+       
+
+            <!--======= SIGN UP FORM =========-->
+            <div class="col-sm-6">
+                <form action="/home/SaveData" method="POST">
+                    <ul class=" row">
+                    <li class="col-md-6">
+                        <div class="form-group">
+                            <label for="">
+                                User Name *
+                                <input type="text" name="name" class="form-control" id="" placeholder="Enter the name" required />
+                                
+                            </label>
+                        </div>
+                    </li>
+                    <li class="col-md-6">
+                        <div class="form-group">
+                            <label for="">
+                                Password *
+                                <input type="password" name="password" class="form-control" id="" placeholder="Enter the password" required />
+                               
+                            </label>
+                        </div>
+             
+                    <li class="col-md-6">
+                        <div class="form-group">
+                            <label for="">
+                                E-mail Address *
+                                <input type="email" name="mail" class="form-control" id="" placeholder="Enter the email " required />
+                                
+                            </label>
+                        </div>
+                    </li>
+                    <li class="col-md-6">
+                        <div class="form-group">
+                            <label for="">
+                                Cnic*
+                                <input type="text" name="cnic" class="form-control" id="" placeholder="Enter the cnic" required />
+                                
+                            </label>
+                        </div>
+                    </li>
+                    <li class="col-md-6">
+                        <div class="form-group">
+                            <label for="">
+                                Address
+                                <input type="text" name="address" class="form-control" id="" placeholder="Enter the address" required />
+                              
+                            </label>
+                        </div>
+                    </li>
+                    <li class="col-md-6">
+                        <div class="form-group">
+                            <label for="">
+                                Role
+                                <input type="text" name="role" class="form-control" id="" placeholder=" Enter the role" required />
+                                
+                            </label>
+                        </div>
+                    </li>
+                        <li class="col-md-6">
+                            <div class="form-group">
+                                <label for="">
+                                    Phone#no
+                                    <input type="number" name="phone" class="form-control" id="" placeholder=" Enter the phone#" required />
+                                   
+                                </label>
+                            </div>
+                        </li>
+
+                    <li class="col-md-6">
+                        <button type="submit" class="btn">create an account</button>
+                    </li>
+                    </ul>
+                </form>
+                <div class="policy">
+                    <p>By creating an account, you accept our <a href="#.">Privacy Policy </a> and our <a href="#."> Terms and Conditions </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
